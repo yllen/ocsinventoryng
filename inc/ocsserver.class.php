@@ -4208,7 +4208,7 @@ JAVASCRIPT;
                }
 
                echo "<form method='post' name='ocsng_form' id='ocsng_form' action='$target'>";
-               if ($caneditlink && $caneditimport) {
+               if ($caneditlink || $caneditimport) {
                   self::checkBox($target);
                }
                echo "<table class='tab_cadre_fixe'>";
